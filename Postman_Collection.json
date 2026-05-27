@@ -1,0 +1,169 @@
+{
+  "info": {
+    "_postman_id": "852f02f3-07ae-41ba-a8c4-4cd516c14f7a",
+    "name": "BuildMaster",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53724537",
+    "_collection_link": "https://go.postman.co/collection/53724537-852f02f3-07ae-41ba-a8c4-4cd516c14f7a?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Dashboard API",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Team POST Request",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"rahul\",\r\n    \"email\": \"rahul@gmail.com\",\r\n    \"title\": \"project manager\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/team-members/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "team-members",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Team GET Request",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/team-members/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "team-members",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Project POST Request",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\": \"Sunset Tower Complex\",\r\n    \"status\": \"active\",\r\n    \"client\": \"Apex Developers\",\r\n    \"location\": \"Downtown, NY\",\r\n    \"start_date\":\"2024-10-15\",\r\n    \"deadline\": \"2027-10-15\",\r\n    \"manager\": 1,\r\n    \"project_type\": \"commercial\",\r\n    \"progress\": 45,\r\n    \"budget\": 25000000,\r\n    \"expenses\": 12000000,\r\n    \"delayed_issues\": 1,\r\n    \"team\": [1]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/projects/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "projects",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Project GET Request",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/tasks/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "tasks",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Task POST Request",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\": \"Foundation excavation\",\r\n    \"difficulty\": \"high\",\r\n    \"status\": \"in progress\",\r\n    \"due_date\": \"2026-10-5\",\r\n    \"project\": \"Sunset Tower Complex\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/tasks/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "tasks",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Task GET Request",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}
